@@ -1,0 +1,598 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.OpenApi/1.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
+      "Microsoft.TeamFoundationServer.ExtendedClient/16.170.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.TeamFoundationServer.ExtendedClient.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "5.6.3"
+        },
+        "build": {
+          "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "5.6.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/5.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
+      "type": "package",
+      "path": "microsoft.extensions.apidescription.server/3.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Extensions.ApiDescription.Server.props",
+        "build/Microsoft.Extensions.ApiDescription.Server.targets",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
+        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.nuspec",
+        "tools/Newtonsoft.Json.dll",
+        "tools/dotnet-getdocument.deps.json",
+        "tools/dotnet-getdocument.dll",
+        "tools/dotnet-getdocument.runtimeconfig.json",
+        "tools/net461-x86/GetDocument.Insider.exe",
+        "tools/net461-x86/GetDocument.Insider.exe.config",
+        "tools/net461/GetDocument.Insider.exe",
+        "tools/net461/GetDocument.Insider.exe.config",
+        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
+        "tools/netcoreapp2.1/GetDocument.Insider.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.OpenApi/1.2.3": {
+      "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "type": "package",
+      "path": "microsoft.openapi/1.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.OpenApi.dll",
+        "lib/net46/Microsoft.OpenApi.pdb",
+        "lib/net46/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.2.3.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Microsoft.TeamFoundationServer.ExtendedClient/16.170.0": {
+      "sha512": "nIDK6FU6vU8cMmRs7GOffAfZIFmzSO7G3IECZfkUZv4GShaniy8aDSPkLd56l75cQA5QLBK9en236QXF7lqXiA==",
+      "type": "package",
+      "path": "microsoft.teamfoundationserver.extendedclient/16.170.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.TeamFoundationServer.ExtendedClient.targets",
+        "lib/native/amd64/Microsoft.WITDataStore64.dll",
+        "lib/native/x86/Microsoft.WITDataStore32.dll",
+        "lib/net462/Microsoft.TeamFoundation.Build.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Build.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.Build.Common.dll",
+        "lib/net462/Microsoft.TeamFoundation.Build.Common.xml",
+        "lib/net462/Microsoft.TeamFoundation.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.DeleteTeamProject.dll",
+        "lib/net462/Microsoft.TeamFoundation.DeleteTeamProject.xml",
+        "lib/net462/Microsoft.TeamFoundation.Diff.dll",
+        "lib/net462/Microsoft.TeamFoundation.Diff.xml",
+        "lib/net462/Microsoft.TeamFoundation.Discussion.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Discussion.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.Git.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Git.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.Lab.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Lab.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.Lab.Common.dll",
+        "lib/net462/Microsoft.TeamFoundation.Lab.Common.xml",
+        "lib/net462/Microsoft.TeamFoundation.Lab.TestIntegration.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Lab.TestIntegration.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.ProjectManagement.dll",
+        "lib/net462/Microsoft.TeamFoundation.ProjectManagement.xml",
+        "lib/net462/Microsoft.TeamFoundation.SharePointReporting.Integration.dll",
+        "lib/net462/Microsoft.TeamFoundation.SharePointReporting.Integration.xml",
+        "lib/net462/Microsoft.TeamFoundation.TestImpact.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.TestImpact.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.TestManagement.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.TestManagement.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.TestManagement.Common.dll",
+        "lib/net462/Microsoft.TeamFoundation.TestManagement.Common.xml",
+        "lib/net462/Microsoft.TeamFoundation.VersionControl.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.VersionControl.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.VersionControl.Common.Integration.dll",
+        "lib/net462/Microsoft.TeamFoundation.VersionControl.Common.Integration.xml",
+        "lib/net462/Microsoft.TeamFoundation.VersionControl.Common.dll",
+        "lib/net462/Microsoft.TeamFoundation.VersionControl.Common.xml",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.dll",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.xml",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.dll",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.xml",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Client.dll",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Client.xml",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Common.dll",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Common.xml",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Proxy.dll",
+        "lib/net462/Microsoft.TeamFoundation.WorkItemTracking.Proxy.xml",
+        "lib/net462/cs/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/cs/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/de/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/es/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/fr/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/it/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/ja/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/ko/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/pl/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/pt-BR/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/ru/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/tr/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Build.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Build.Common.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Discussion.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Lab.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Lab.Common.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Lab.TestIntegration.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.Lab.WorkflowIntegration.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.SharePointReporting.Integration.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.TestImpact.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.TestManagement.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.VersionControl.Common.Integration.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.VersionControl.Common.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.WorkItemTracking.Client.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.WorkItemTracking.Common.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.TeamFoundation.WorkItemTracking.Proxy.resources.dll",
+        "license.rtf",
+        "license.txt",
+        "microsoft.teamfoundationserver.extendedclient.16.170.0.nupkg.sha512",
+        "microsoft.teamfoundationserver.extendedclient.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Swashbuckle.AspNetCore/5.6.3": {
+      "sha512": "UkL9GU0mfaA+7RwYjEaBFvAzL8qNQhNqAeV5uaWUu/Z+fVgvK9FHkGCpTXBqSQeIHuZaIElzxnLDdIqGzuCnVg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/5.6.3": {
+      "sha512": "rn/MmLscjg6WSnTZabojx5DQYle2GjPanSPbCU3Kw8Hy72KyQR3uy8R1Aew5vpNALjfUFm2M/vwUtqdOlzw+GA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/5.6.3": {
+      "sha512": "CkhVeod/iLd3ikVTDOwG5sym8BE5xbqGJ15iF3cC7ZPg2kEwDQL4a88xjkzsvC9oOB2ax6B0rK0EgRK+eOBX+w==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/5.6.3": {
+      "sha512": "BPvcPxQRMsYZ3HnYmGKRWDwX4Wo29WHh14Q6B10BB8Yfbbcza+agOC2UrBFA1EuaZuOsFLbp6E2+mqVNF/Je8A==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Microsoft.TeamFoundationServer.ExtendedClient >= 16.170.0",
+      "Newtonsoft.Json >= 13.0.1",
+      "Swashbuckle.AspNetCore >= 5.6.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\simoande\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\GIT\\OMDB\\OMDB_API\\OMDB_API\\OMDB_API.csproj",
+      "projectName": "OMDB_API",
+      "projectPath": "C:\\GIT\\OMDB\\OMDB_API\\OMDB_API\\OMDB_API.csproj",
+      "packagesPath": "C:\\Users\\simoande\\.nuget\\packages\\",
+      "outputPath": "C:\\GIT\\OMDB\\OMDB_API\\OMDB_API\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\simoande\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.TeamFoundationServer.ExtendedClient": {
+            "target": "Package",
+            "version": "[16.170.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

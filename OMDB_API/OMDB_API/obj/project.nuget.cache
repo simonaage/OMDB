@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "HAJmhOUv07/i7PSmMCQrvlkz8kJ+tiYjj/9gb5HsF8Mshn0v42XrpLEFqx5+nqklJvXwjBs1a+s2SNVqATvZHw==",
+  "success": true,
+  "projectFilePath": "C:\\GIT\\OMDB\\OMDB_API\\OMDB_API\\OMDB_API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simoande\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\microsoft.teamfoundationserver.extendedclient\\16.170.0\\microsoft.teamfoundationserver.extendedclient.16.170.0.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\simoande\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
